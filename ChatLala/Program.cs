@@ -1,4 +1,4 @@
-﻿#region setting
+﻿
 using Discord;
 using Discord.WebSocket;
 using System.Collections.Concurrent;
@@ -8,21 +8,21 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks.Dataflow;
 
-
+#region setting
 var setting = new
 {
     #region discord
     discord = new
     {
         #region token
-        token = args[0]
+        token = Environment.GetEnvironmentVariable("DISCORD_TOKEN")
         #endregion
     },
     #endregion
     chatGPT = new
     {
         #region token
-        token = args[1],
+        token = Environment.GetEnvironmentVariable("CHAT_GPT_TOKEN"),
         #endregion
         roles = new[]
         {
