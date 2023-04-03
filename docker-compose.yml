@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  chatlala:
-    image: ${DOCKER_REGISTRY-}chatlala
-    build:
-      context: .
-      dockerfile: ChatLala/Dockerfile

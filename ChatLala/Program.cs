@@ -15,14 +15,14 @@ var setting = new
     discord = new
     {
         #region token
-        token = args[0]
+        token = Environment.GetEnvironmentVariable("DISCORD_TOKEN")
         #endregion
     },
     #endregion
     chatGPT = new
     {
         #region token
-        token = args[1],
+        token = Environment.GetEnvironmentVariable("CHAT_GPT_TOKEN"),
         #endregion
         roles = new[]
         {
