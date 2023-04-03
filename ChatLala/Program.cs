@@ -1,4 +1,4 @@
-﻿#region setting
+﻿
 using Discord;
 using Discord.WebSocket;
 using System.Collections.Concurrent;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks.Dataflow;
 
-
+#region setting
 var setting = new
 {
     #region discord
